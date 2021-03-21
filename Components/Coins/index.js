@@ -10,8 +10,8 @@ const Coins = ({name, price, symbol, marketcap, id, volume, image, priceChange})
                         <h1 className={styles.coin_h1}>{name}</h1>
                         <p className={styles.coin_symbol}>{symbol}</p>
                         <div className={styles.coin_data}>
-                            <p className={styles.coin_price}>{'\u20B9'} {price}</p>
-                            <p className={styles.coin_volume}>{'\u20B9'} {volume.toLocaleString()}</p>
+                            <p className={styles.coin_price}>Price: {'\u20B9'} {price}</p>
+                            <p className={styles.coin_volume}>Volume: {'\u20B9'} {volume.toLocaleString()}</p>
                             {
                                 priceChange < 0 ? (<p className={styles.coin_percent, styles.red}>
                                     {priceChange.toFixed(2)}%
